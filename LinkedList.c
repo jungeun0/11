@@ -24,8 +24,35 @@ linknd_t* create_nod(int value){
 	//동적 메모리 할당 
 	
 	ndPtr->data = value; 
-	ndPtr->next = NULL; //무슨 뜻이지? 
+	ndPtr->next = NULL;
 	
 	//정수값 저장 
 	return ndPtr; 	
+}
+
+
+
+
+
+void addTail(){
+	linknd_t *ndPtr;
+	linknd_t *head;
+	
+	if(list ==  NULL){
+		return;
+	}
+	else{
+		ndPtr =list;
+		while(ndPtr->next != NULL){
+			ndPtr = ndPtr->next;
+		}
+		
+		ndPtr = create_node(value);
+		ndPtr->next = ndPtr;
+		
+	}
+	
+	
+	
+	
 }
