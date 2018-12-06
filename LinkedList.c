@@ -9,5 +9,5 @@ typedef struct Linknd{
 	
 }linknd_t;//구조체 변수 
 
-
-/*linknd_t nd; //=struct linked nd; */
+static linknd_t *list; // 구조체 변수의 실체 , static 은 정적 할당--> 외부에서 변환을 할 수 없음. (extern) 
+ 
